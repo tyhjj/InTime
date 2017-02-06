@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="J5A-vp-ihZ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优选理财" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmc-Sc-phL">
+                    <rect key="frame" x="159" y="7.5" width="57.5" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3ja-PZ-bRc"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="a6K-yf-Hx2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_fproL" translatesAutoresizingMaskIntoConstraints="NO" id="43K-mn-Ocw">
+                    <rect key="frame" x="83" y="13" width="73" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="Iof-cX-dgP"/>
+                        <constraint firstAttribute="height" constant="9" id="NpK-uY-lmz"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_fproR" translatesAutoresizingMaskIntoConstraints="NO" id="J12-JL-ZDG">
+                    <rect key="frame" x="219.5" y="13" width="73" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="QxW-Da-TqN"/>
+                        <constraint firstAttribute="height" constant="9" id="zBw-79-udS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKd-HI-uz2">
+                    <rect key="frame" x="0.0" y="34.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Cts-Ua-6SJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cKd-HI-uz2" secondAttribute="bottom" id="60P-YX-b9f"/>
+                <constraint firstItem="J12-JL-ZDG" firstAttribute="leading" secondItem="Jmc-Sc-phL" secondAttribute="trailing" constant="3" id="71c-Rd-KcN"/>
+                <constraint firstItem="Jmc-Sc-phL" firstAttribute="centerX" secondItem="J5A-vp-ihZ" secondAttribute="centerX" id="S92-Ef-TxV"/>
+                <constraint firstItem="Jmc-Sc-phL" firstAttribute="leading" secondItem="43K-mn-Ocw" secondAttribute="trailing" constant="3" id="jGU-CF-ecm"/>
+                <constraint firstItem="Jmc-Sc-phL" firstAttribute="centerY" secondItem="43K-mn-Ocw" secondAttribute="centerY" id="obn-MJ-TeW"/>
+                <constraint firstItem="J12-JL-ZDG" firstAttribute="centerY" secondItem="Jmc-Sc-phL" secondAttribute="centerY" id="sbj-6i-R4R"/>
+                <constraint firstAttribute="trailing" secondItem="cKd-HI-uz2" secondAttribute="trailing" id="tlD-5W-GPc"/>
+                <constraint firstItem="cKd-HI-uz2" firstAttribute="leading" secondItem="J5A-vp-ihZ" secondAttribute="leading" id="xrn-qR-68W"/>
+                <constraint firstItem="Jmc-Sc-phL" firstAttribute="centerY" secondItem="J5A-vp-ihZ" secondAttribute="centerY" id="yEz-1L-SqW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="9" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_fproL" width="73" height="9"/>
+        <image name="home_fproR" width="73" height="8"/>
+    </resources>
+</document>

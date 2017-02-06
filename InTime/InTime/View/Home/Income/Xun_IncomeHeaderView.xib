@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Eas-w3-etg" customClass="Xun_IncomeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_adverticon" translatesAutoresizingMaskIntoConstraints="NO" id="jjg-3R-lh8">
+                    <rect key="frame" x="15" y="11" width="15" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="F5Q-hn-ZBJ"/>
+                        <constraint firstAttribute="width" constant="15" id="uvy-RH-Qb3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新理财产品上线，年收益6.5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYp-zl-76K">
+                    <rect key="frame" x="35" y="10" width="174.5" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="1nT-50-mdL"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="GqY-bx-SeJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-At-r5k">
+                    <rect key="frame" x="295" y="7" width="70" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="E93-dr-3br"/>
+                        <constraint firstAttribute="width" constant="70" id="R8D-i8-FMI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="去赚提成" image="home_pushicon">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shareAction:" destination="Eas-w3-etg" eventType="touchUpInside" id="eEo-lK-C2Z"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLn-dF-g58">
+                    <rect key="frame" x="0.0" y="34.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="cUB-ji-T2P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jjg-3R-lh8" firstAttribute="centerY" secondItem="Eas-w3-etg" secondAttribute="centerY" id="4P2-Vo-EJW"/>
+                <constraint firstItem="jjg-3R-lh8" firstAttribute="leading" secondItem="Eas-w3-etg" secondAttribute="leading" constant="15" id="M5M-VU-hUg"/>
+                <constraint firstAttribute="trailing" secondItem="Aev-At-r5k" secondAttribute="trailing" constant="10" id="OOk-GS-Kff"/>
+                <constraint firstItem="LYp-zl-76K" firstAttribute="centerY" secondItem="jjg-3R-lh8" secondAttribute="centerY" id="ajO-gc-B0l"/>
+                <constraint firstAttribute="trailing" secondItem="yLn-dF-g58" secondAttribute="trailing" id="grQ-ID-VBz"/>
+                <constraint firstItem="yLn-dF-g58" firstAttribute="leading" secondItem="Eas-w3-etg" secondAttribute="leading" id="nRc-NL-EPH"/>
+                <constraint firstAttribute="bottom" secondItem="yLn-dF-g58" secondAttribute="bottom" id="uk9-Td-Pvm"/>
+                <constraint firstItem="LYp-zl-76K" firstAttribute="leading" secondItem="jjg-3R-lh8" secondAttribute="trailing" constant="5" id="usq-3v-1WE"/>
+                <constraint firstItem="Aev-At-r5k" firstAttribute="centerY" secondItem="Eas-w3-etg" secondAttribute="centerY" id="zsY-Re-gyA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="117" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_adverticon" width="15" height="13"/>
+        <image name="home_pushicon" width="13" height="13"/>
+    </resources>
+</document>

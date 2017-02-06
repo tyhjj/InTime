@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="incomcell" rowHeight="120" id="KGk-i7-Jjw" customClass="Xun_IncomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp1-Hp-MoK">
+                        <rect key="frame" x="17" y="8" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="div-mf-Pbj"/>
+                            <constraint firstAttribute="height" constant="21" id="lnI-Fl-4dk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTD-Nk-L40">
+                        <rect key="frame" x="31" y="55" width="100" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="cm6-zi-Gec"/>
+                            <constraint firstAttribute="height" constant="30" id="rgh-Kb-5rM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" red="0.95686274509803915" green="0.31764705882352939" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点时贷收益额数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLM-kh-BBB">
+                        <rect key="frame" x="186" y="8" width="115" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="t3U-Fo-a8s"/>
+                            <constraint firstAttribute="height" constant="20" id="zDl-Tz-eDz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zTD-Nk-L40" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.5" id="C9K-Kz-mTT"/>
+                    <constraint firstItem="pLM-kh-BBB" firstAttribute="centerY" secondItem="Xp1-Hp-MoK" secondAttribute="centerY" id="Dmb-D7-zgX"/>
+                    <constraint firstItem="Xp1-Hp-MoK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="FVJ-5Z-AS7"/>
+                    <constraint firstItem="zTD-Nk-L40" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="I3z-DB-xgj"/>
+                    <constraint firstItem="Xp1-Hp-MoK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MCU-V8-Ikv"/>
+                    <constraint firstItem="pLM-kh-BBB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.5" id="g1P-JP-n3r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="incomeLabel" destination="zTD-Nk-L40" id="VPT-qX-8cP"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="83.5"/>
+        </tableViewCell>
+    </objects>
+</document>

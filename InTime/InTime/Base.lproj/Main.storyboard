@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kt8-pn-gRl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sfn-Dg-FFI">
+            <objects>
+                <tabBarController id="kt8-pn-gRl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nqE-9t-xlA"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kk2-aa-VbL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.29019607843137252" green="0.30980392156862746" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qyY-nL-R4E" kind="relationship" relationship="viewControllers" id="z70-3S-Jnr"/>
+                        <segue destination="rLu-Cc-T6z" kind="relationship" relationship="viewControllers" id="zhQ-Fr-KG1"/>
+                        <segue destination="LHP-xh-sS9" kind="relationship" relationship="viewControllers" id="NCV-mN-iXp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5v-TG-cIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1377" y="-475"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="mDT-CQ-4z1">
+            <objects>
+                <navigationController id="qyY-nL-R4E" customClass="Xun_BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tabBarItem_HomeN" selectedImage="tabBarItem_HomeS" id="OqF-CB-gp0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Oh-lW-qMW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AAI-dh-6Gy" kind="relationship" relationship="rootViewController" id="zeW-8V-iBG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHm-Fs-QHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2071" y="328"/>
+        </scene>
+        <!--Xun Home Controller-->
+        <scene sceneID="pCT-7I-0XX">
+            <objects>
+                <viewController id="AAI-dh-6Gy" customClass="Xun_HomeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZKf-xK-HeY"/>
+                        <viewControllerLayoutGuide type="bottom" id="bQa-Vm-2GL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nb3-ZM-8wO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dOG-TE-HaW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="AAI-dh-6Gy" id="Ert-pV-i8f"/>
+                                    <outlet property="delegate" destination="AAI-dh-6Gy" id="MGp-qq-e2G"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bQa-Vm-2GL" firstAttribute="top" secondItem="dOG-TE-HaW" secondAttribute="bottom" id="7Zx-v9-3o8"/>
+                            <constraint firstItem="dOG-TE-HaW" firstAttribute="leading" secondItem="Nb3-ZM-8wO" secondAttribute="leadingMargin" constant="-16" id="L6e-1m-Mhv"/>
+                            <constraint firstItem="dOG-TE-HaW" firstAttribute="trailing" secondItem="Nb3-ZM-8wO" secondAttribute="trailingMargin" constant="16" id="TZO-SV-Bwo"/>
+                            <constraint firstItem="dOG-TE-HaW" firstAttribute="top" secondItem="ZKf-xK-HeY" secondAttribute="bottom" id="zx0-r2-Rnm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LVP-7u-5FR"/>
+                    <connections>
+                        <outlet property="contentTableView" destination="dOG-TE-HaW" id="x0c-go-12L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AW4-rc-JzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2071.1999999999998" y="1110.4947526236883"/>
+        </scene>
+        <!--Xun Mine Controller-->
+        <scene sceneID="94U-go-Cry">
+            <objects>
+                <viewController id="c7u-hS-MdM" customClass="Xun_MineController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qiS-Vf-jgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="6cx-Gp-eAl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pTN-5V-Uh2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-tF-NhK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="c7u-hS-MdM" id="yAY-y2-x1y"/>
+                                    <outlet property="delegate" destination="c7u-hS-MdM" id="hcD-ys-DyP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ee-tF-NhK" firstAttribute="leading" secondItem="pTN-5V-Uh2" secondAttribute="leading" id="jNI-SK-1ZA"/>
+                            <constraint firstItem="3ee-tF-NhK" firstAttribute="top" secondItem="qiS-Vf-jgW" secondAttribute="bottom" id="rew-qh-Unu"/>
+                            <constraint firstAttribute="trailing" secondItem="3ee-tF-NhK" secondAttribute="trailing" id="twq-2T-588"/>
+                            <constraint firstItem="6cx-Gp-eAl" firstAttribute="top" secondItem="3ee-tF-NhK" secondAttribute="bottom" id="z2z-lD-if9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6ij-Qt-wDJ"/>
+                    <connections>
+                        <outlet property="menuTableView" destination="3ee-tF-NhK" id="M0j-dY-xtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7g-c2-Oho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="1110"/>
+        </scene>
+        <!--Xun Investment Controller-->
+        <scene sceneID="qBC-3N-VDA">
+            <objects>
+                <viewController id="57B-iY-h1H" customClass="Xun_InvestmentController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1hQ-eg-pJq"/>
+                        <viewControllerLayoutGuide type="bottom" id="xak-OB-ggm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZSR-Uu-jm5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0o-rZ-oST">
+                                <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Is1-QN-PSB">
+                                        <rect key="frame" x="0.0" y="3" width="125" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="I7e-sG-LGg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="85" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="起投金额" image="inve_downarrow">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="investmenSiftAction:" destination="57B-iY-h1H" eventType="touchUpInside" id="oId-zy-hLi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGS-Zi-YkT">
+                                        <rect key="frame" x="250" y="3" width="125" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="85" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="收益率" image="inve_downarrow">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="investmenSiftAction:" destination="57B-iY-h1H" eventType="touchUpInside" id="adb-2K-h2w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPd-BM-fi3">
+                                        <rect key="frame" x="125" y="3" width="125" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="85" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="投资期限" image="inve_downarrow">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="investmenSiftAction:" destination="57B-iY-h1H" eventType="touchUpInside" id="bVh-A2-RRv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29019607843137252" green="0.30980392156862746" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rGS-Zi-YkT" firstAttribute="width" secondItem="Is1-QN-PSB" secondAttribute="width" id="0kK-qD-Iqw"/>
+                                    <constraint firstItem="rGS-Zi-YkT" firstAttribute="height" secondItem="Is1-QN-PSB" secondAttribute="height" id="2Wu-GD-w67"/>
+                                    <constraint firstItem="rGS-Zi-YkT" firstAttribute="centerY" secondItem="Is1-QN-PSB" secondAttribute="centerY" id="4h7-GF-tPq"/>
+                                    <constraint firstItem="Is1-QN-PSB" firstAttribute="leading" secondItem="C0o-rZ-oST" secondAttribute="leading" id="ChN-Eq-AeK"/>
+                                    <constraint firstItem="NPd-BM-fi3" firstAttribute="leading" secondItem="Is1-QN-PSB" secondAttribute="trailing" id="IAK-iI-DD1"/>
+                                    <constraint firstItem="NPd-BM-fi3" firstAttribute="height" secondItem="Is1-QN-PSB" secondAttribute="height" id="Xjl-3F-HbU"/>
+                                    <constraint firstItem="rGS-Zi-YkT" firstAttribute="leading" secondItem="NPd-BM-fi3" secondAttribute="trailing" id="cuJ-eb-qsr"/>
+                                    <constraint firstItem="Is1-QN-PSB" firstAttribute="centerY" secondItem="C0o-rZ-oST" secondAttribute="centerY" id="ggF-Tp-fZ2"/>
+                                    <constraint firstItem="NPd-BM-fi3" firstAttribute="width" secondItem="Is1-QN-PSB" secondAttribute="width" id="hkB-YM-Yve"/>
+                                    <constraint firstItem="rGS-Zi-YkT" firstAttribute="leading" secondItem="NPd-BM-fi3" secondAttribute="trailing" id="iFN-wM-7bq"/>
+                                    <constraint firstItem="NPd-BM-fi3" firstAttribute="centerY" secondItem="Is1-QN-PSB" secondAttribute="centerY" id="jlN-1h-afn"/>
+                                    <constraint firstAttribute="height" constant="45" id="pcq-ef-olS"/>
+                                    <constraint firstAttribute="trailing" secondItem="rGS-Zi-YkT" secondAttribute="trailing" id="pmg-lV-2nA"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8bo-uK-xAq">
+                                <rect key="frame" x="0.0" y="109" width="375" height="509"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="57B-iY-h1H" id="3Ea-rJ-kzY"/>
+                                    <outlet property="delegate" destination="57B-iY-h1H" id="pIU-pm-cyk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C0o-rZ-oST" firstAttribute="top" secondItem="1hQ-eg-pJq" secondAttribute="bottom" id="9XW-lC-AT5"/>
+                            <constraint firstItem="C0o-rZ-oST" firstAttribute="leading" secondItem="ZSR-Uu-jm5" secondAttribute="leading" id="B4L-hy-fBk"/>
+                            <constraint firstItem="8bo-uK-xAq" firstAttribute="leading" secondItem="ZSR-Uu-jm5" secondAttribute="leading" id="Ept-sr-vQZ"/>
+                            <constraint firstItem="xak-OB-ggm" firstAttribute="top" secondItem="8bo-uK-xAq" secondAttribute="bottom" id="Ips-iH-JcE"/>
+                            <constraint firstAttribute="trailing" secondItem="8bo-uK-xAq" secondAttribute="trailing" id="SHh-pc-hi0"/>
+                            <constraint firstItem="8bo-uK-xAq" firstAttribute="top" secondItem="C0o-rZ-oST" secondAttribute="bottom" id="v8N-ps-htr"/>
+                            <constraint firstAttribute="trailing" secondItem="C0o-rZ-oST" secondAttribute="trailing" id="wun-Y7-5QV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ibe-xp-den"/>
+                    <connections>
+                        <outlet property="fromInvBtn" destination="Is1-QN-PSB" id="uDo-VV-mVv"/>
+                        <outlet property="proTableView" destination="8bo-uK-xAq" id="5I5-YM-L7k"/>
+                        <outlet property="rateBtn" destination="rGS-Zi-YkT" id="MkY-B6-6qq"/>
+                        <outlet property="termBtn" destination="NPd-BM-fi3" id="KgY-I2-J4u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0U-kP-lCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378.4000000000001" y="1109.5952023988007"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="2BD-RQ-j7U">
+            <objects>
+                <navigationController id="LHP-xh-sS9" customClass="Xun_BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="tabBarItem_MineN" selectedImage="tabBarItem_MineS" id="Yme-2A-BeF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aol-4I-ysO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c7u-hS-MdM" kind="relationship" relationship="rootViewController" id="ksT-YL-Q7j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZo-Dl-Tbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="328"/>
+        </scene>
+        <!--投资-->
+        <scene sceneID="baR-uF-tCl">
+            <objects>
+                <navigationController id="rLu-Cc-T6z" customClass="Xun_BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="投资" image="tabBarItem_InvestN" selectedImage="tabBarItem_InvestS" id="G00-xi-zh7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iT6-gK-dx2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="57B-iY-h1H" kind="relationship" relationship="rootViewController" id="u9N-hk-sho"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juM-cN-hsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378" y="328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="inve_downarrow" width="7" height="4"/>
+        <image name="tabBarItem_HomeN" width="22" height="20"/>
+        <image name="tabBarItem_HomeS" width="22" height="20"/>
+        <image name="tabBarItem_InvestN" width="20" height="20"/>
+        <image name="tabBarItem_InvestS" width="20" height="20"/>
+        <image name="tabBarItem_MineN" width="20" height="20"/>
+        <image name="tabBarItem_MineS" width="19" height="20"/>
+    </resources>
+</document>

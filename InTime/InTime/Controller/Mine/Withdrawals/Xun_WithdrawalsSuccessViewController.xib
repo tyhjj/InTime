@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Xun_WithdrawalsSuccessViewController">
+            <connections>
+                <outlet property="bankInfoLabel" destination="YhN-UK-hS1" id="eBQ-QS-wMO"/>
+                <outlet property="contentBgView" destination="Hqr-hI-Hmm" id="VRw-bZ-rNf"/>
+                <outlet property="feesLabel" destination="bri-2Q-wdf" id="IYL-IF-k0i"/>
+                <outlet property="moneyLabel" destination="0u6-f6-e57" id="efZ-IN-gVE"/>
+                <outlet property="userLabel" destination="FEF-4E-gHr" id="o0a-9K-Od5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="withdraw_icon" translatesAutoresizingMaskIntoConstraints="NO" id="xK5-Rg-oz3">
+                    <rect key="frame" x="135" y="20" width="105" height="105"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="a7v-ef-3zI"/>
+                        <constraint firstAttribute="height" constant="105" id="sot-OR-pBx"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfj-k2-EWS">
+                    <rect key="frame" x="114.5" y="140" width="145" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="q7M-6R-XZ9"/>
+                        <constraint firstAttribute="height" constant="20" id="wWg-zO-4m8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="提现申请已成功" image="withdraw_check">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现需要1-3个工作日到账，如遇节假日顺延，请注意查收" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2Q-eO-TbP">
+                    <rect key="frame" x="30.5" y="165" width="313" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="NNb-9Y-SIM"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="PHf-ni-boK"/>
+                        <constraint firstAttribute="height" constant="15" id="xja-Bp-hSN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqr-hI-Hmm">
+                    <rect key="frame" x="20" y="200" width="335" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现银行卡：浦发银行-储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhN-UK-hS1">
+                            <rect key="frame" x="25" y="7" width="285" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="gVj-yW-8c1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开户姓名：李*明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-4E-gHr">
+                            <rect key="frame" x="25" y="34" width="285" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="mPh-4Q-O8y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手续费：5.0元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bri-2Q-wdf">
+                            <rect key="frame" x="25" y="61" width="285" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="W5t-Rd-6bn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现金额：20000.00元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u6-f6-e57">
+                            <rect key="frame" x="25" y="88" width="285" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="0u2-Ta-4y9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YhN-UK-hS1" secondAttribute="trailing" constant="25" id="36k-Wc-Eb7"/>
+                        <constraint firstAttribute="height" constant="120" id="7Yl-3f-B7k"/>
+                        <constraint firstItem="0u6-f6-e57" firstAttribute="leading" secondItem="YhN-UK-hS1" secondAttribute="leading" id="7d9-Ed-DNG"/>
+                        <constraint firstItem="0u6-f6-e57" firstAttribute="top" secondItem="bri-2Q-wdf" secondAttribute="bottom" constant="7" id="ASw-Ev-7qJ"/>
+                        <constraint firstItem="0u6-f6-e57" firstAttribute="trailing" secondItem="YhN-UK-hS1" secondAttribute="trailing" id="Cc9-5s-F1s"/>
+                        <constraint firstItem="FEF-4E-gHr" firstAttribute="trailing" secondItem="YhN-UK-hS1" secondAttribute="trailing" id="JWV-h7-AGN"/>
+                        <constraint firstItem="FEF-4E-gHr" firstAttribute="top" secondItem="YhN-UK-hS1" secondAttribute="bottom" constant="7" id="JzK-5g-Jf7"/>
+                        <constraint firstItem="bri-2Q-wdf" firstAttribute="top" secondItem="FEF-4E-gHr" secondAttribute="bottom" constant="7" id="NVO-sc-rfw"/>
+                        <constraint firstItem="bri-2Q-wdf" firstAttribute="trailing" secondItem="YhN-UK-hS1" secondAttribute="trailing" id="cdb-gX-hcw"/>
+                        <constraint firstItem="FEF-4E-gHr" firstAttribute="leading" secondItem="YhN-UK-hS1" secondAttribute="leading" id="cl2-dX-OUQ"/>
+                        <constraint firstItem="YhN-UK-hS1" firstAttribute="leading" secondItem="Hqr-hI-Hmm" secondAttribute="leading" constant="25" id="sbw-On-x64"/>
+                        <constraint firstItem="YhN-UK-hS1" firstAttribute="top" secondItem="Hqr-hI-Hmm" secondAttribute="top" constant="7" id="txH-l4-AeO"/>
+                        <constraint firstItem="bri-2Q-wdf" firstAttribute="leading" secondItem="YhN-UK-hS1" secondAttribute="leading" id="yEy-UA-8Cb"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4h-uP-yCd">
+                    <rect key="frame" x="50" y="360" width="275" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6TM-kS-nrS"/>
+                    </constraints>
+                    <state key="normal" title="查看交易记录" backgroundImage="normal_bigBtn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showTradeRecordsAction:" destination="-1" eventType="touchUpInside" id="QXD-8H-iXy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p4h-uP-yCd" firstAttribute="top" secondItem="Hqr-hI-Hmm" secondAttribute="bottom" constant="40" id="0MG-PP-Ams"/>
+                <constraint firstItem="xK5-Rg-oz3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="4KC-am-tWO"/>
+                <constraint firstItem="p4h-uP-yCd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="7Hc-YV-dQZ"/>
+                <constraint firstItem="Pfj-k2-EWS" firstAttribute="top" secondItem="xK5-Rg-oz3" secondAttribute="bottom" constant="15" id="7O7-Ke-dGj"/>
+                <constraint firstItem="Pfj-k2-EWS" firstAttribute="centerX" secondItem="xK5-Rg-oz3" secondAttribute="centerX" id="HQW-by-OgH"/>
+                <constraint firstItem="Hqr-hI-Hmm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="KTA-7C-2X1"/>
+                <constraint firstItem="h2Q-eO-TbP" firstAttribute="top" secondItem="Pfj-k2-EWS" secondAttribute="bottom" constant="5" id="NQJ-yf-oD2"/>
+                <constraint firstItem="Hqr-hI-Hmm" firstAttribute="top" secondItem="h2Q-eO-TbP" secondAttribute="bottom" constant="20" id="Ybl-Ia-uOk"/>
+                <constraint firstItem="h2Q-eO-TbP" firstAttribute="centerX" secondItem="Pfj-k2-EWS" secondAttribute="centerX" id="ZAe-Rg-nJC"/>
+                <constraint firstAttribute="trailing" secondItem="p4h-uP-yCd" secondAttribute="trailing" constant="50" id="gxc-Ta-JxV"/>
+                <constraint firstItem="xK5-Rg-oz3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="m7b-dr-Ta1"/>
+                <constraint firstAttribute="trailing" secondItem="Hqr-hI-Hmm" secondAttribute="trailing" constant="20" id="zDa-BA-6Yk"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="normal_bigBtn" width="325" height="40"/>
+        <image name="withdraw_check" width="17" height="17"/>
+        <image name="withdraw_icon" width="105" height="105"/>
+    </resources>
+</document>
